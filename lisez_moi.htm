@@ -1,0 +1,55 @@
+<!--
+-----------------------------------
+------ SCRIPT DE PROTECTION -------
+          DBProtect V1.0
+-----------------------------------
+-->
+<html>
+<head>
+<title>INSTRUCTIONS - DBProtect</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div align="center" class="Style11">
+  <p class="titre"><strong>  <strong><strong>- : : : LES INSTRUCTIONS : : : -</strong></strong></strong></p>
+  <p class="Style15">&nbsp;</p>
+  <p align="left" class="Style15"><u><strong>PREREQUIS  :</strong></u></p>
+  <p align="left" class="Style16">- APACHE et PHP<br>
+  - MySQL</p>
+  <p align="left" class="Style16">EasyPHP fait largement l'affaire (t&eacute;l&eacute;chargez-le <a href="http://www.easyphp.org/telechargements.php3" target="_blank">ici</a>).</p>
+  <p align="left" class="Style16">NB: Les sessions doivent &ecirc;tre activ&eacute;es dans le php.ini et un r&eacute;pertoire permettant leur stockage doit &ecirc;tre sp&eacute;cifi&eacute;. </p>
+  <p align="left" class="Style16">&nbsp;</p>
+  <p align="left" class="Style16"><strong><u>INSTALLATION : </u></strong></p>
+  <p align="left" class="Style16">- Placez la totalit&eacute; des fichiers du script sur un r&eacute;pertoire de votre serveur web </p>
+  <p align="left" class="Style16"> - Vous allez maintenant cr&eacute;er une BDD nomm&eacute;e 'DBprotect' (ou autre si vous voulez) &agrave; l'aide de PhpMyadmin (par exemple)</p>
+  <p align="left" class="Style16"> - &Eacute;ditez au besoin les param&egrave;tres de connexion du fichier connexion.php (pensez y si vous utilisez un autre nom pour votre base)</p>
+  <p align="left" class="Style16">- Ex&eacute;cutez La commande SQL contenu dans le fichier <a href="DBProtect.sql">dbprotect.sql</a></p>
+  <p align="left" class="Style16">- Voil&agrave; ! Ouvrez maintenant le fichier <a href="index.php">index.php</a> via votre navigateur web avec le chemin d'acc&egrave;s complet depuis votre serveur Apache.</p>
+  <p align="left" class="Style16">- Il ne reste plus qu'&agrave; vous connecter avec les identifiants de l'utilisateur par d&eacute;faut :</p>
+  <p align="left" class="Style16">login : &quot;<span class="donnee">toto</span>&quot;<br>
+  mot de passe : &quot;<span class="donnee">mdp</span>&quot;</p>
+  <p align="left" class="Style16">La suite vous sera expliqu&eacute;e une fois connect&eacute;. Vous allez pouvoir ajouter des utilisateurs et &eacute;diter des actions en fonction des niveaux d'acc&egrave;s. N'oubliez pas de regarder les sources pour comprendre le fonctionnement.</p>
+  <p align="left" class="Style16">&nbsp;</p>
+  <p align="left" class="Style16"><strong><u>POUR ALLER PLUS LOIN : </u></strong></p>
+  <p align="left" class="Style16">N'h&eacute;sitez pas &agrave; &eacute;diter ces quelques pages sous Dreamweaver ou tout autre WYSIWYG pour en modifer l'apparence et afin de le personaliser &agrave; votre go&ucirc;t ou afin de respecter la charte graphique du site sur lequel vous l'implanterez.</p>
+  <p align="left" class="Style16">Pour une meilleure s&eacute;curit&eacute;, n'oubliez pas que seule une connection s&eacute;curis&eacute;e SSL offre un cryptage des donn&eacute;es qui circulent sur le r&eacute;seau. Je ne saurai donc trop vous conseiller d'utiliser ce script de pair avec une connexion s&eacute;curis&eacute;e. </p>
+  <p align="left" class="Style16">N'oubliez pas non plus de supprimer l'utilisateur par d&eacute;faut (<span class="donnee">toto</span>) de votre base de donn&eacute;es, sinon, &agrave; quoi bon avoir un coffre fort si on en laisse la cl&eacute; &agrave; la port&eacute; de tous...</p>
+  <p align="center" class="Style16"> Pour des informations plus d&eacute;taill&eacute;es encore dans le fonctionnement de ce script, lisez <a href="details.doc">ceci</a>.</p>
+  <hr>
+  <p align="center" class="Style16"> Ce script a &eacute;t&eacute; r&eacute;alis&eacute; et distribu&eacute; dans un but non lucratif afin de rendre accessible &agrave; tous un moyen simple et efficace de s&eacute;curiser des pages web. J&rsquo;esp&egrave;re que vous en ferez bon usage. Si toutefois vous appr&eacute;ciez le service rendu (et comme la gratuit&eacute; ne nourrit pas son homme), vous pouvez me faire un  don via l&rsquo;interface s&eacute;curis&eacute;e Paypal en cliquant sur le lien suivant.</p>
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+    <p>
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="business" value="donation@borrat.net">
+      <input type="hidden" name="item_name" value="DBProtect">
+      <input type="hidden" name="no_note" value="1">
+      <input type="hidden" name="currency_code" value="EUR">
+      <input type="hidden" name="tax" value="0">
+      <input type="image" src="https://www.paypal.com/fr_FR/i/btn/x-click-butcc-donate.gif" border="0" name="submit" alt="Effectuez vos paiements via PayPal : une solution rapide, gratuite et sécurisée !">
+    </p>
+    <p> Peu importe la taille de votre bourse, seul le geste compte. A votre bon c&oelig;ur &hellip; </p>
+    <p>MERCI&nbsp;!</p>
+  </form>
+</div>
+</body>
+</html>
